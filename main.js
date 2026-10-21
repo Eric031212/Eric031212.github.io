@@ -13,6 +13,26 @@ if ("IntersectionObserver" in window && !reduceMotion) {
   blocks.forEach((b) => { b.classList.add("reveal"); io.observe(b); });
 }
 
+// Assemble email links at runtime so the address is not plain text in the HTML.
+document.querySelectorAll(".js-email").forEach((a) => {
+  const addr = `${a.dataset.user}@${a.dataset.domain}`;
+  const subject = a.dataset.subject ? `?subject=${encodeURIComponent(a.dataset.subject)}` : "";
+  a.href = `mailto:${addr}${subject}`;
+  if (a.hasAttribute("data-show")) a.textContent = addr;
+});
+
+// Mobile menu toggle.
+const nav = document.querySelector(".nav");
+const menuBtn = document.querySelector(".menu-btn");
+menuBtn.addEventListener("click", () => {
+  const open = nav.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", open);
+});
+nav.querySelectorAll(".nav-links a").forEach((a) => a.addEventListener("click", () => {
+  nav.classList.remove("open");
+  menuBtn.setAttribute("aria-expanded", "false");
+}));
+
 // Bubbles drifting up behind the hobby tiles.
 const layer = document.querySelector(".playground .bubbles");
 if (layer && !reduceMotion) {

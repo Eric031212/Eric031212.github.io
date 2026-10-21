@@ -14,10 +14,12 @@
 <body>
   <nav class="nav">
     <a class="logo" href="#top">Hongtao Xie</a>
-    <div class="nav-links">
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    <div class="nav-links" id="nav-links">
       <a href="#research">Research</a>
       <a href="#pubs">Publications</a>
       <a href="#news">News</a>
+      <a href="#education">Education</a>
       <a href="assets/Hongtao_Xie_CV.pdf" target="_blank" rel="noopener">CV</a>
       <a class="nav-cta" href="#collab">Collaborate</a>
     </div>
@@ -37,9 +39,12 @@
         </p>
         <a class="status" href="#collab"><span class="dot"></span>Open to research collaboration</a>
         <div class="links">
-          <a class="btn btn-solid" href="mailto:hongtao_xie@brown.edu">Email</a>
-          <a class="btn" href="https://github.com/Eric031212" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-solid js-email" href="#collab" data-user="hongtao_xie" data-domain="brown.edu">Email</a>
           <a class="btn" href="assets/Hongtao_Xie_CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a class="btn" href="https://scholar.google.com/citations?user=waF7ttYAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+          <a class="btn" href="https://github.com/Eric031212" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/hongtao-xie-204811407/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="https://orcid.org/0009-0004-3703-3372" target="_blank" rel="noopener">ORCID</a>
         </div>
       </div>
     </div>
@@ -68,6 +73,7 @@
 
       <div class="cards">
         <article class="card">
+          <video class="card-media" src="assets/rethoi.mp4" poster="assets/rethoi.jpg" autoplay muted loop playsinline aria-label="RetHOI samples: generated humans interacting with objects"></video>
           <div class="card-top"><span class="tag">Thesis</span><span class="when">2025</span></div>
           <h3>RetHOI</h3>
           <p class="with">Text-driven 3D human–object interaction synthesis</p>
@@ -77,6 +83,7 @@
         </article>
 
         <article class="card">
+          <img class="card-media fit" src="assets/scgc.jpg" alt="SCGC pipeline overview" loading="lazy">
           <div class="card-top"><span class="tag">VRCAI 2025</span><span class="when">2024–25</span></div>
           <h3>SCGC</h3>
           <p class="with">Sparse control-guided Gaussian Splatting</p>
@@ -86,6 +93,7 @@
         </article>
 
         <article class="card">
+          <img class="card-media fit" src="assets/mambaguard.jpg" alt="MambaGuard-MOO architecture overview" loading="lazy">
           <div class="card-top"><span class="tag">BigData-W 2025</span><span class="when">2025</span></div>
           <h3>MambaGuard-MOO</h3>
           <p class="with">Multi-objective safe drug recommendation</p>
@@ -111,8 +119,9 @@
       <h2>Publications</h2>
       <ol class="pubs">
         <li>
-          <span class="venue">VRCAI 2025</span>
+          <img class="thumb" src="assets/scgc.jpg" alt="SCGC pipeline overview" loading="lazy">
           <div>
+            <span class="venue">VRCAI 2025</span>
             <p class="ptitle">SCGC: Sparse Control-Guided Gaussian Splatting with Contrastive Learning</p>
             <p class="pmeta"><b>Hongtao Xie</b>, Hui Zhang</p>
             <p class="pmeta"><i>ACM SIGGRAPH VRCAI 2025</i></p>
@@ -123,8 +132,9 @@
           </div>
         </li>
         <li>
-          <span class="venue">BigData-W 2025</span>
+          <img class="thumb" src="assets/mambaguard.jpg" alt="MambaGuard-MOO architecture overview" loading="lazy">
           <div>
+            <span class="venue">BigData-W 2025</span>
             <p class="ptitle">MambaGuard-MOO: Multi-Objective Safe Drug Recommendation with Contrastive Learning</p>
             <p class="pmeta"><b>Hongtao Xie</b>, Shengxin Zhu</p>
             <p class="pmeta"><i>IEEE BigData 2025 Workshop on AI in Big Data Analytics for Healthcare</i></p>
@@ -146,6 +156,21 @@
       </ul>
     </section>
 
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="block">
+      <h2>Education</h2>
+      <ul class="edu">
+        <li>
+          <div><b>Brown University</b><span>Sc.M. in Electrical and Computer Engineering</span></div>
+          <time>2026 – 2028 (expected)</time>
+        </li>
+        <li>
+          <div><b>Beijing Normal–Hong Kong Baptist University (BNBU)</b><span>B.S. (Honors) in Computer Science and Technology</span></div>
+          <time>2022 – 2026</time>
+        </li>
+      </ul>
+    </section>
+
     <!-- ============ COLLAB ============ -->
     <section id="collab" class="block">
       <div class="collab">
@@ -157,7 +182,7 @@
           <li><b>Human motion</b> and human–object interaction generation</li>
           <li>Efficient sequence architectures for vision</li>
         </ul>
-        <a class="btn btn-solid btn-big" href="mailto:hongtao_xie@brown.edu?subject=Research%20collaboration">hongtao_xie@brown.edu</a>
+        <a class="btn btn-solid btn-big js-email" href="#collab" data-user="hongtao_xie" data-domain="brown.edu" data-subject="Research collaboration" data-show>hongtao_xie [at] brown.edu</a>
         <p class="small">Students, PhDs, faculty and industry researchers are all welcome.</p>
       </div>
     </section>
@@ -189,6 +214,7 @@
 
   <footer class="footer">
     <p>Made with <span class="heart">♥</span>, curiosity and a lot of coffee by Hongtao · © 2026</p>
+    <p class="updated">Last updated: October 2026</p>
   </footer>
 
   <script src="main.js"></script>
