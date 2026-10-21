@@ -1,26 +1,29 @@
-// Gentle page motion: seamless drifting waves and fade-in sections. No dependencies.
+// Light page motion: fade-in sections and a few bubbles in the "Beyond research" corner.
 
-// Build each wave as a repeated smooth curve twice the view width, so the CSS
-// drift (translateX by one view width) loops without a seam.
-document.querySelectorAll(".waves").forEach((svg) => {
-  const [, , width, height] = svg.getAttribute("viewBox").split(" ").map(Number);
-  svg.querySelectorAll("path").forEach((path) => {
-    const y = Number(path.dataset.y);
-    const amp = Number(path.dataset.amp);
-    const half = Number(path.dataset.period) / 2;
-    let d = `M0 ${y} Q${half / 2} ${y - amp} ${half} ${y}`;
-    for (let x = half * 2; x <= width * 2; x += half) d += ` T${x} ${y}`;
-    path.setAttribute("d", `${d} V${height} H0Z`);
-  });
-});
+const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 // Fade sections in as they scroll into view.
 const blocks = document.querySelectorAll(".block");
-if ("IntersectionObserver" in window) {
+if ("IntersectionObserver" in window && !reduceMotion) {
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
       if (e.isIntersecting) { e.target.classList.add("seen"); io.unobserve(e.target); }
     }
   }, { threshold: 0.12 });
   blocks.forEach((b) => { b.classList.add("reveal"); io.observe(b); });
+}
+
+// Bubbles drifting up behind the hobby tiles.
+const layer = document.querySelector(".playground .bubbles");
+if (layer && !reduceMotion) {
+  for (let i = 0; i < 14; i++) {
+    const b = document.createElement("span");
+    const size = 8 + Math.random() * 22;
+    b.className = "bubble";
+    b.style.width = b.style.height = size + "px";
+    b.style.left = Math.random() * 100 + "%";
+    b.style.animationDuration = 7 + Math.random() * 8 + "s";
+    b.style.animationDelay = -Math.random() * 12 + "s";
+    layer.appendChild(b);
+  }
 }

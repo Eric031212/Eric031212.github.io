@@ -7,7 +7,7 @@
   <meta name="description" content="Hongtao Xie — Sc.M. ECE student at Brown. 3D vision, generative models, and vision-language models. Open to research collaboration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
 </head>
@@ -24,7 +24,6 @@
   </nav>
 
   <header class="hero" id="top">
-    <div class="breeze" aria-hidden="true"><span></span><span></span><span></span></div>
     <div class="hero-inner">
       <img class="avatar" src="assets/avatar.webp" alt="Portrait of Hongtao Xie" width="220" height="220">
       <div class="hero-text">
@@ -44,11 +43,6 @@
         </div>
       </div>
     </div>
-    <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
-      <path class="w1" data-y="62" data-amp="22" data-period="720"/>
-      <path class="w2" data-y="82" data-amp="14" data-period="480"/>
-      <path class="w3" data-y="98" data-amp="-10" data-period="720"/>
-    </svg>
   </header>
 
   <main>
@@ -79,10 +73,6 @@
           <p class="with">Text-driven 3D human–object interaction synthesis</p>
           <p>Parallel RetNet branches with bidirectional cross-retention between human and
             object trajectories, replacing the Transformers in HOI-Diff.</p>
-          <div class="stats">
-            <div><b>−94%</b><span>foot skating</span></div>
-            <div><b>−31%</b><span>inference time</span></div>
-          </div>
           <a class="more" href="https://github.com/Eric031212/RetHOI" target="_blank" rel="noopener">Code →</a>
         </article>
 
@@ -92,10 +82,6 @@
           <p class="with">Sparse control-guided Gaussian Splatting</p>
           <p>Sparse control points refined by a small Transformer give Scaffold-GS explicit
             structure, with dual-level contrastive learning for multi-view consistency.</p>
-          <div class="stats">
-            <div><b>33.61</b><span>dB PSNR</span></div>
-            <div><b>0.951</b><span>SSIM</span></div>
-          </div>
           <a class="more" href="https://github.com/Eric031212/SCGC" target="_blank" rel="noopener">Code →</a>
         </article>
 
@@ -105,10 +91,6 @@
           <p class="with">Multi-objective safe drug recommendation</p>
           <p>A state-space model over longitudinal patient records, with drug–drug interaction
             constraints and contrastive drug embeddings.</p>
-          <div class="stats">
-            <div><b>0.705</b><span>F1 (MIMIC-III)</span></div>
-            <div><b>½</b><span>DDI rate</span></div>
-          </div>
           <a class="more" href="https://github.com/Eric031212/MambaGuard-MOO" target="_blank" rel="noopener">Code →</a>
         </article>
       </div>
@@ -181,19 +163,32 @@
     </section>
 
     <!-- ============ OFF STAGE ============ -->
-    <section class="block offstage">
+    <section class="block">
       <h2>Beyond research</h2>
-      <p>I've played guitar for 15 years 🎸, build small web apps and Flask backends, and once made
-        <i>pibbos-tidepool</i>, a tiny sea-otter desktop app 🦦.</p>
+      <div class="playground">
+        <div class="bubbles" aria-hidden="true"></div>
+        <div class="tile">
+          <span class="px-icon">🎸🎹</span>
+          <p class="px-title">MUSIC</p>
+          <p>I love playing guitar and piano.</p>
+        </div>
+        <div class="tile">
+          <span class="px-icon">🦦</span>
+          <p class="px-title">PIBBO</p>
+          <p>A tiny desktop pet I built that barely uses any memory.
+            <a href="https://github.com/Eric031212/pibbos-tidepool" target="_blank" rel="noopener">Meet Pibbo →</a></p>
+        </div>
+        <div class="tile">
+          <span class="px-icon">⚽🏸🏀</span>
+          <p class="px-title">SPORTS</p>
+          <p>Football, badminton and basketball whenever I can.</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
-    <svg class="waves waves-foot" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
-      <path class="w1" data-y="40" data-amp="16" data-period="720"/>
-      <path class="w2" data-y="56" data-amp="-10" data-period="480"/>
-    </svg>
-    <p>© 2026 Hongtao Xie · Providence, RI</p>
+    <p>Made with <span class="heart">♥</span>, curiosity and a lot of coffee by Hongtao · © 2026</p>
   </footer>
 
   <script src="main.js"></script>
