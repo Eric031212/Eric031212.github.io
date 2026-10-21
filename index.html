@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hongtao Xie</title>
+  <meta name="description" content="Hongtao Xie — Sc.M. ECE student at Brown. 3D vision, generative models, and vision-language models. Open to research collaboration.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+</head>
+<body>
+  <nav class="nav">
+    <a class="logo" href="#top">Hongtao Xie</a>
+    <div class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#pubs">Publications</a>
+      <a href="#news">News</a>
+      <a href="assets/Hongtao_Xie_CV.pdf" target="_blank" rel="noopener">CV</a>
+      <a class="nav-cta" href="#collab">Collaborate</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div class="breeze" aria-hidden="true"><span></span><span></span><span></span></div>
+    <div class="hero-inner">
+      <img class="avatar" src="assets/avatar.webp" alt="Portrait of Hongtao Xie" width="220" height="220">
+      <div class="hero-text">
+        <h1>Hongtao Xie</h1>
+        <p class="role">Sc.M. student, Electrical &amp; Computer Engineering · Brown University</p>
+        <p class="bio">
+          I work on helping machines <b>see and reason about the visual world</b>:
+          3D scene representations (Gaussian Splatting), generative models for
+          human–object interaction, and, most recently,
+          <b>vision-language models</b> for medical imaging.
+        </p>
+        <a class="status" href="#collab"><span class="dot"></span>Open to research collaboration</a>
+        <div class="links">
+          <a class="btn btn-solid" href="mailto:hongtao_xie@brown.edu">Email</a>
+          <a class="btn" href="https://github.com/Eric031212" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="assets/Hongtao_Xie_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </div>
+      </div>
+    </div>
+    <svg class="waves" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+      <path class="w1" data-y="62" data-amp="22" data-period="720"/>
+      <path class="w2" data-y="82" data-amp="14" data-period="480"/>
+      <path class="w3" data-y="98" data-amp="-10" data-period="720"/>
+    </svg>
+  </header>
+
+  <main>
+    <!-- ============ RESEARCH ============ -->
+    <section id="research" class="block">
+      <h2>Research</h2>
+      <ul class="chips">
+        <li>Vision-language models</li>
+        <li>3D vision &amp; neural rendering</li>
+        <li>Gaussian Splatting · NeRF</li>
+        <li>Human–object interaction</li>
+        <li>Diffusion models</li>
+        <li>Contrastive learning</li>
+        <li>RetNet · State-space models</li>
+      </ul>
+
+      <article class="card card-now">
+        <div class="card-top"><span class="tag tag-now">Current</span><span class="when">2026 –</span></div>
+        <h3>Vision-language models for medical imaging</h3>
+        <p>Recently I've been working on vision-language models in the medical domain,
+          looking at how to make their answers more reliable.</p>
+      </article>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-top"><span class="tag">Thesis</span><span class="when">2025</span></div>
+          <h3>RetHOI</h3>
+          <p class="with">Text-driven 3D human–object interaction synthesis</p>
+          <p>Parallel RetNet branches with bidirectional cross-retention between human and
+            object trajectories, replacing the Transformers in HOI-Diff.</p>
+          <div class="stats">
+            <div><b>−94%</b><span>foot skating</span></div>
+            <div><b>−31%</b><span>inference time</span></div>
+          </div>
+          <a class="more" href="https://github.com/Eric031212/RetHOI" target="_blank" rel="noopener">Code →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="tag">VRCAI 2025</span><span class="when">2024–25</span></div>
+          <h3>SCGC</h3>
+          <p class="with">Sparse control-guided Gaussian Splatting</p>
+          <p>Sparse control points refined by a small Transformer give Scaffold-GS explicit
+            structure, with dual-level contrastive learning for multi-view consistency.</p>
+          <div class="stats">
+            <div><b>33.61</b><span>dB PSNR</span></div>
+            <div><b>0.951</b><span>SSIM</span></div>
+          </div>
+          <a class="more" href="https://github.com/Eric031212/SCGC" target="_blank" rel="noopener">Code →</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top"><span class="tag">BigData-W 2025</span><span class="when">2025</span></div>
+          <h3>MambaGuard-MOO</h3>
+          <p class="with">Multi-objective safe drug recommendation</p>
+          <p>A state-space model over longitudinal patient records, with drug–drug interaction
+            constraints and contrastive drug embeddings.</p>
+          <div class="stats">
+            <div><b>0.705</b><span>F1 (MIMIC-III)</span></div>
+            <div><b>½</b><span>DDI rate</span></div>
+          </div>
+          <a class="more" href="https://github.com/Eric031212/MambaGuard-MOO" target="_blank" rel="noopener">Code →</a>
+        </article>
+      </div>
+
+      <details class="earlier">
+        <summary>Earlier projects</summary>
+        <ul>
+          <li>Monocular 4D dynamic scene reconstruction, mentored by Heng Yu (Stanford), 2024</li>
+          <li>Semantic understanding in machine-to-machine communication, with Prof. Ricky Yuen-Tan Hou, 2024</li>
+          <li>Lightweight 2D human pose estimation on edge devices, with Prof. Shuhong Chen, 2023</li>
+          <li>Sign-language video-to-text · Chest X-ray report generation, 2024</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- ============ PUBLICATIONS ============ -->
+    <section id="pubs" class="block">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li>
+          <span class="venue">VRCAI 2025</span>
+          <div>
+            <p class="ptitle">SCGC: Sparse Control-Guided Gaussian Splatting with Contrastive Learning</p>
+            <p class="pmeta"><b>Hongtao Xie</b>, Hui Zhang</p>
+            <p class="pmeta"><i>ACM SIGGRAPH VRCAI 2025</i></p>
+            <p class="plinks">
+              <a href="https://doi.org/10.1145/3779232.3779453" target="_blank" rel="noopener">DOI</a>
+              <a href="https://github.com/Eric031212/SCGC" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="venue">BigData-W 2025</span>
+          <div>
+            <p class="ptitle">MambaGuard-MOO: Multi-Objective Safe Drug Recommendation with Contrastive Learning</p>
+            <p class="pmeta"><b>Hongtao Xie</b>, Shengxin Zhu</p>
+            <p class="pmeta"><i>IEEE BigData 2025 Workshop on AI in Big Data Analytics for Healthcare</i></p>
+            <p class="plinks">
+              <a href="https://github.com/Eric031212/MambaGuard-MOO" target="_blank" rel="noopener">Code</a>
+            </p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section id="news" class="block">
+      <h2>News</h2>
+      <ul class="news">
+        <li><time>Sep 2026</time> <span>Joined <b>Brown University</b> for an Sc.M. in ECE. Hello, Providence!</span></li>
+        <li><time>2025</time> <span><b>SCGC</b> accepted to ACM SIGGRAPH VRCAI 2025.</span></li>
+        <li><time>2025</time> <span><b>MambaGuard-MOO</b> accepted to the IEEE BigData 2025 healthcare workshop.</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ COLLAB ============ -->
+    <section id="collab" class="block">
+      <div class="collab">
+        <h2>Let's collaborate</h2>
+        <p>I'm actively looking for <b>research collaborations</b>. If you work on any of these, I'd love to chat:</p>
+        <ul class="wants">
+          <li><b>Vision-language models</b>, especially for medical imaging</li>
+          <li><b>3D vision</b>: Gaussian Splatting, dynamic scenes</li>
+          <li><b>Human motion</b> and human–object interaction generation</li>
+          <li>Efficient sequence architectures for vision</li>
+        </ul>
+        <a class="btn btn-solid btn-big" href="mailto:hongtao_xie@brown.edu?subject=Research%20collaboration">hongtao_xie@brown.edu</a>
+        <p class="small">Students, PhDs, faculty and industry researchers are all welcome.</p>
+      </div>
+    </section>
+
+    <!-- ============ OFF STAGE ============ -->
+    <section class="block offstage">
+      <h2>Beyond research</h2>
+      <p>I've played guitar for 15 years 🎸, build small web apps and Flask backends, and once made
+        <i>pibbos-tidepool</i>, a tiny sea-otter desktop app 🦦.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <svg class="waves waves-foot" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path class="w1" data-y="40" data-amp="16" data-period="720"/>
+      <path class="w2" data-y="56" data-amp="-10" data-period="480"/>
+    </svg>
+    <p>© 2026 Hongtao Xie · Providence, RI</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
