@@ -201,6 +201,11 @@ main { max-width: 980px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
 .heart { color: #e0607e; display: inline-block; animation: beat 1.6s ease-in-out infinite; }
 @keyframes beat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.25); } 30% { transform: scale(1); } }
 
+/* ---------- current work ---------- */
+.now-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-bottom: 18px; }
+.now-grid .card-now { margin-bottom: 0; }
+.px-img { width: 34px; height: 34px; image-rendering: pixelated; display: block; margin: 5px 0; }
+
 /* ---------- media, education, menu ---------- */
 .card-media { width: calc(100% + 44px); margin: -22px -22px 16px; border-radius: 16px 16px 0 0; display: block; aspect-ratio: 720 / 268; object-fit: cover; background: #f3f5f7; border-bottom: 1px solid var(--line); }
 .card-media.fit { object-fit: contain; background: #fff; padding: 6px; }
@@ -224,7 +229,7 @@ main { max-width: 980px; margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px); }
   .bio { margin-left: auto; margin-right: auto; }
   .links { justify-content: center; }
   .avatar { width: 170px; height: 170px; }
-  .cards, .playground { grid-template-columns: 1fr; }
+  .cards, .playground, .now-grid { grid-template-columns: 1fr; }
   .pubs li { grid-template-columns: 1fr; gap: 8px; }
   .venue { justify-self: start; }
   .menu-btn { display: flex; }

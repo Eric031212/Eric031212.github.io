@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Hongtao Xie</title>
-  <meta name="description" content="Hongtao Xie — Sc.M. ECE student at Brown. 3D vision, generative models, and vision-language models. Open to research collaboration.">
+  <meta name="description" content="Hongtao Xie — Sc.M. ECE student at Brown. Humanoid–object interaction, 3D vision, and vision-language models. Open to research collaboration.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -32,9 +32,11 @@
         <h1>Hongtao Xie</h1>
         <p class="role">Sc.M. student, Electrical &amp; Computer Engineering · Brown University</p>
         <p class="bio">
-          I work on helping machines <b>see and reason about the visual world</b>:
-          3D scene representations (Gaussian Splatting), generative models for
-          human–object interaction, and, most recently,
+          I'm interested in how machines go <b>from seeing to moving</b>: understanding
+          the visual world, and turning language into motion that is physically grounded.
+          I've worked on 3D scene representations (Gaussian Splatting) and text-driven
+          human–object interaction. Right now I'm working on <b>humanoid–object interaction
+          in physics simulation</b> with Northeastern University, and on
           <b>vision-language models</b> for medical imaging.
         </p>
         <a class="status" href="#collab"><span class="dot"></span>Open to research collaboration</a>
@@ -55,21 +57,33 @@
     <section id="research" class="block">
       <h2>Research</h2>
       <ul class="chips">
+        <li>Humanoid motion · physics simulation</li>
+        <li>Human–object interaction</li>
+        <li>World models</li>
         <li>Vision-language models</li>
         <li>3D vision &amp; neural rendering</li>
         <li>Gaussian Splatting · NeRF</li>
-        <li>Human–object interaction</li>
         <li>Diffusion models</li>
         <li>Contrastive learning</li>
         <li>RetNet · State-space models</li>
       </ul>
 
-      <article class="card card-now">
-        <div class="card-top"><span class="tag tag-now">Current</span><span class="when">2026 –</span></div>
-        <h3>Vision-language models for medical imaging</h3>
-        <p>Recently I've been working on vision-language models in the medical domain,
-          looking at how to make their answers more reliable.</p>
-      </article>
+      <div class="now-grid">
+        <article class="card card-now">
+          <div class="card-top"><span class="tag tag-now">Current</span><span class="when">Nov 2026 –</span></div>
+          <h3>Text-driven humanoid–object interaction</h3>
+          <p class="with">with Prof. Huaizu Jiang's group, Northeastern University</p>
+          <p>Teaching a simulated humanoid robot with dexterous hands to interact with
+            objects from language, so that the generated motion can actually be executed
+            in physics, not just look plausible.</p>
+        </article>
+        <article class="card card-now">
+          <div class="card-top"><span class="tag tag-now">Current</span><span class="when">2026 –</span></div>
+          <h3>Vision-language models for medical imaging</h3>
+          <p>Looking at how to make the answers of vision-language models in the medical
+            domain more reliable.</p>
+        </article>
+      </div>
 
       <div class="cards">
         <article class="card">
@@ -152,6 +166,7 @@
     <section id="news" class="block">
       <h2>News</h2>
       <ul class="news">
+        <li><time>Nov 2026</time> <span>Started collaborating with <b>Prof. Huaizu Jiang's group at Northeastern University</b> on text-driven humanoid–object interaction.</span></li>
         <li><time>Sep 2026</time> <span>Joined <b>Brown University</b> for an Sc.M. in ECE. Hello, Providence!</span></li>
         <li><time>2025</time> <span><b>SCGC</b> accepted to ACM SIGGRAPH VRCAI 2025.</span></li>
         <li><time>2025</time> <span><b>MambaGuard-MOO</b> accepted to the IEEE BigData 2025 healthcare workshop.</span></li>
@@ -181,7 +196,7 @@
         <ul class="wants">
           <li><b>Vision-language models</b>, especially for medical imaging</li>
           <li><b>3D vision</b>: Gaussian Splatting, dynamic scenes</li>
-          <li><b>Human motion</b> and human–object interaction generation</li>
+          <li><b>Humanoid motion</b> and human–object interaction, in kinematics or physics</li>
           <li>Efficient sequence architectures for vision</li>
         </ul>
         <a class="btn btn-solid btn-big js-email" href="#collab" data-user="hongtao_xie" data-domain="brown.edu" data-subject="Research collaboration" data-show>hongtao_xie [at] brown.edu</a>
@@ -200,9 +215,9 @@
           <p>I love playing guitar and piano.</p>
         </div>
         <div class="tile">
-          <span class="px-icon">🦦</span>
+          <img class="px-img" src="assets/pibbo.png" alt="Pibbo, a pixel sea otter" width="34" height="34">
           <p class="px-title">PIBBO</p>
-          <p>A tiny desktop pet I built that barely uses any memory.
+          <p>A tiny pixel-otter desktop pet for the Mac that I built. It barely uses any memory.
             <a href="https://github.com/Eric031212/pibbos-tidepool" target="_blank" rel="noopener">Meet Pibbo →</a></p>
         </div>
         <div class="tile">
@@ -216,7 +231,7 @@
 
   <footer class="footer">
     <p>Made with <span class="heart">♥</span>, curiosity and a lot of coffee by Hongtao · © 2026</p>
-    <p class="updated">Last updated: October 2026</p>
+    <p class="updated">Last updated: November 2026</p>
   </footer>
 
   <script src="main.js"></script>
